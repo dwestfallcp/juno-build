@@ -22,7 +22,7 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
 fi
 
 echo "---> Installing application source..."
-cp -aRf /tmp/src/. ./
+cp -Rf /tmp/src ./
 
 JOB_NAME="Juno"
 BUILD_NUMBER="`date +\%s`"
