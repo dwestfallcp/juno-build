@@ -7,6 +7,7 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 HOME=/opt/juno
+GIT_SSH="ssh -p 20202"
 set -o errexit
 
 # If the 'golang-builder' assemble script is executed with the '-h' flag, print the usage.
