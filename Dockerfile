@@ -8,6 +8,7 @@ LABEL io.k8s.description="Builder image for compiling and testing juno" \
 COPY ./s2i/bin/ ${STI_SCRIPTS_PATH}
 RUN yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel tomcat tomcat-lib maven git
 RUN mkdir ${SOURCE_DIR} && chmod 0777 ${SOURCE_DIR}
+RUN chmod g=u /etc/passwd
 WORKDIR ${SOURCE_DIR}
 USER 1001
 
