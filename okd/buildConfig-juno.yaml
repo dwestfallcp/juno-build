@@ -1,0 +1,26 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  labels:
+    build: juno
+  name: juno
+spec:
+  source:
+    type: Git
+    ref: master
+    git:
+      uri: https://github.com/dwestfallcp/juno.git
+  strategy:
+    type: Source
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        name: juno-builder:0.0.1
+  output:
+    to:
+      kind: ImageStreamTag
+      name: juno:1.0
+  triggers:
+  - type: ConfigChange
+  - imageChange:
+      type: ImageChange
