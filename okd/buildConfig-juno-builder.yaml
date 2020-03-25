@@ -9,7 +9,7 @@ spec:
     type: Git
     git:
       ref: master
-      uri: https://github.com/dwestfallcp/juno-builder.git
+      uri: https://github.com/dwestfallcp/juno-build.git
   strategy:
     type: Docker
     dockerStrategy:
