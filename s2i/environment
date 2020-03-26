@@ -1,1 +1,3 @@
 HOME=/opt/juno
+CATALINA_HOME=/usr/share/tomcat
+CATALINA_BASE=/usr/share/tomcat
