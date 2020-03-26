@@ -9,7 +9,7 @@ spec:
     type: Git
     ref: master
     git:
-      uri: https://github.com/dwestfallcp/juno.git
+    uri: https://github.com/dwestfallcp/juno.git
   strategy:
     type: Source
     sourceStrategy:
